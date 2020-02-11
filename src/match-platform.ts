@@ -12,4 +12,4 @@ function getPath() {
   }
 }
 
-fs.renameSync(getPath(), path.join(__dirname, "../bin/mdbook.exe"));
+fs.copyFileSync(getPath(), path.join(__dirname, "../bin/mdbook.exe"));
