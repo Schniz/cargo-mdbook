@@ -1,0 +1,3 @@
+/dist
+bin/mdbook.exe
+*.log

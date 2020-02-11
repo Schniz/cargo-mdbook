@@ -1,0 +1,25 @@
+{
+  "name": "cargo-mdbook",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Gal Schlezinger",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  },
+  "bin": {
+    "mdbook": "./bin/mdbook.exe"
+  },
+  "scripts": {
+    "postinstall": "node ./dist/match-platform.js"
+  },
+  "files": [
+    "dist",
+    "bin/mdbook-windows.exe",
+    "bin/mdbook-macos",
+    "bin/mdbook-linux"
+  ],
+  "dependencies": {}
+}
