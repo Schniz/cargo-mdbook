@@ -13,13 +13,12 @@
     "mdbook": "./bin/mdbook.exe"
   },
   "scripts": {
-    "postinstall": "node ./dist/match-platform.js"
+    "postinstall": "node ./dist/match-platform.js",
+    "prepublishOnly": "rm -f ./bin/mdbook.exe; touch ./bin/mdbook.exe; chmod u+x ./bin/mdbook.exe"
   },
   "files": [
     "dist",
-    "bin/mdbook-windows.exe",
-    "bin/mdbook-macos",
-    "bin/mdbook-linux"
+    "bin"
   ],
   "dependencies": {}
 }
