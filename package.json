@@ -20,5 +20,6 @@
     "dist",
     "bin"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "repository": "git@github.com:Schniz/cargo-mdbook.git"
 }
