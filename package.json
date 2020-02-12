@@ -1,6 +1,6 @@
 {
   "name": "cargo-mdbook",
-  "version": "0.0.2",
+  "version": "0.3.5",
   "main": "index.js",
   "author": "Gal Schlezinger",
   "license": "MIT",
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "postinstall": "node ./dist/match-platform.js",
-    "prepublishOnly": "rm -f ./bin/mdbook.exe; touch ./bin/mdbook.exe; chmod u+x ./bin/mdbook.exe"
+    "build": "tsc",
+    "prepublishOnly": "yarn build && rm -f ./bin/mdbook.exe; touch ./bin/mdbook.exe; chmod u+x ./bin/mdbook.exe"
   },
   "files": [
     "dist",
