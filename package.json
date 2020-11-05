@@ -1,6 +1,6 @@
 {
   "name": "cargo-mdbook",
-  "version": "0.3.5",
+  "version": "0.4.4",
   "main": "index.js",
   "author": "Gal Schlezinger",
   "license": "MIT",
